@@ -29,8 +29,12 @@ class EmployeeController extends Controller
     // Menyimpan data pegawai
     public function insertdata(Request $request)
     {
+<<<<<<< HEAD
         // Validasi data input
         $request->validate([
+=======
+        $this->validate($request, [
+>>>>>>> 6d313a8 (update)
             'nama' => 'required|min:7|max:10',
             'notelpon' => 'required|min:11|max:12',
             'foto' => 'image|mimes:jpeg,png,jpg,gif|max:2048', // Validasi foto

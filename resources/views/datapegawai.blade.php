@@ -6,6 +6,7 @@
   <link rel="{{ asset('template/stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" integrity="sha512-3pIirOrwegjM6erE5gPSwkUzO+3cTjpnV9lexlNZqvupR64iZBnOOTiiLPb9M36zpMScbmUNIcHUqKD47M719g==" crossorigin="anonymous" referrerpolicy="no-referrer"') }} />
 @endpush
 @section('content')
+<<<<<<< HEAD
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <div class="content-header">
@@ -96,6 +97,36 @@
                 </div>
             </div>
         </div>
+=======
+<div class="content-wrapper">
+  <!-- Content Header (Page header) -->
+  <div class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1 class="m-0">Data Pegawai</h1>
+        </div><!-- /.col -->
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="/">Dashboard</a></li>
+            <li class="breadcrumb-item active">Data Pegawai</li>
+          </ol>
+        </div><!-- /.col -->
+      </div><!-- /.row -->
+    </div><!-- /.container-fluid -->
+  </div>
+    <!-- /.content-header -->
+<div class="container">
+  {{-- <a href="/tambahpegawai" class="btn btn-outline-success">Tambah Data +</a> --}}
+  {{-- {{Session::get('halaman_url')}} --}}
+  <div class="row g-3 align-items-center mt-2"> 
+</div>
+  <div class="row">
+    <br>
+    @if($message = Session::get('Success'))
+    <div class="alert alert-success" role="alert">
+      {{$message}}
+>>>>>>> 6d313a8 (update)
     </div>
     </div>
 @endsection
